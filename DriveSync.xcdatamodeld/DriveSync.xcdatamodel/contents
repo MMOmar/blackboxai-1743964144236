@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="licenseNumber" attributeType="String" syncable="YES"/>
+        <attribute name="licenseDate" attributeType="Date" syncable="YES"/>
+        <attribute name="bdeCompletionDate" attributeType="Date" syncable="YES"/>
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="address" attributeType="String" syncable="YES"/>
+        <attribute name="school" attributeType="String" syncable="YES"/>
+        <attribute name="parentContact" attributeType="String" syncable="YES"/>
+        <attribute name="parentEmail" attributeType="String" syncable="YES"/>
+        <attribute name="licensePhoto" attributeType="Binary" syncable="YES" allowsExternalBinaryDataStorage="YES"/>
+    </entity>
+    <entity name="Lesson" representedClassName="Lesson" syncable="YES" codeGenerationType="class">
+        <attribute name="studentID" attributeType="String" syncable="YES"/>
+        <attribute name="lessonType" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" attributeType="Date" syncable="YES"/>
+        <attribute name="duration" attributeType="Integer16" syncable="YES"/>
+        <attribute name="location" attributeType="String" syncable="YES"/>
+        <attribute name="notes" attributeType="String" syncable="YES"/>
+        <attribute name="status" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BDEProgress" representedClassName="BDEProgress" syncable="YES" codeGenerationType="class">
+        <attribute name="inClassHours" attributeType="Integer16" syncable="YES"/>
+        <attribute name="inCarHours" attributeType="Integer16" syncable="YES"/>
+        <attribute name="selfPacedHours" attributeType="Integer16" syncable="YES"/>
+        <attribute name="deadlineDate" attributeType="Date" syncable="YES"/>
+    </entity>
+</model>
